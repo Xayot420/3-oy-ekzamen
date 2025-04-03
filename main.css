@@ -1,0 +1,67 @@
+
+.light-mode {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.dark-mode {
+    background-color: #1a202c;
+    color: white;
+}
+
+.product-card {
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+.dark-mode .bg-gray-800 {
+    background-color: #2d3748;
+}
+
+.dark-mode .text-gray-600 {
+    color: #e2e8f0;
+}
+
+.cart-btn {
+    font-size: 20px;
+    padding: 8px 16px;
+    background-color: #3182ce;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background-color: #63b3ed;
+}
+
+.product-added {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: green;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    animation: showAdded 2s ease-out;
+}
+
+@keyframes showAdded {
+    0% { opacity: 0; transform: translateY(-10px); }
+    50% { opacity: 1; transform: translateY(0); }
+    100% { opacity: 0; transform: translateY(10px); }
+}
+
+.remove-from-cart {
+    font-size: 22px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
+.remove-from-cart:hover {
+    color: darkred;
+}
